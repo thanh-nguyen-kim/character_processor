@@ -1,0 +1,15 @@
+{
+  "name": "com.setik.characterhelper",
+  "version": "1.0.0",
+  "displayName": "Character Helper",
+  "description": "This is an utility package from setik for preparing text asset which is used in TextMesh Pro Font Asset creating.",
+  "unity": "2019.4",
+  "unityRelease": "8f1",
+  "keywords": [],
+  "author": {
+    "name": "setik",
+    "email": "thanhnguyenkim12@gmail.com",
+    "url": "https://killertee.wordpress.com/about/"
+  },
+  "type": "tool"
+}
