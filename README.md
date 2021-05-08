@@ -3,6 +3,7 @@
 <https://killertee.wordpress.com/about/>
 
 A helper script to prepare text asset which is used in TextMesh Pro Font Asset creating.
+If you install the package using UPM, SampleScene.unity is read-only thus it can't be opened. Drag SampleScene.unity from the package into your project then you can open it as normal.
 
 ## Remove duplicate character from a text file
 
