@@ -1,4 +1,4 @@
-# Ads Module
+# Character Processor
 
 <https://killertee.wordpress.com/about/>
 
@@ -8,11 +8,11 @@ A helper script to prepare text asset which is used in TextMesh Pro Font Asset c
 
 + Drag the text asset in the "OriginText" field.
 + Press Play.
-+ The output.txt should appear in StreamingAssets.
++ The ***_output.txt should appear in StreamingAssets.
 
 ## Remove common characters between origin text and a set of blueprint texts
 
 + Drag the text asset in the "OriginText" field.
 + Drag the blueprint texts in "BluePrintTexts" field.
 + Press Play.
-+ The output.txt should appear in StreamingAssets.
++ The ***_output.txt should appear in StreamingAssets.
