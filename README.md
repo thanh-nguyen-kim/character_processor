@@ -17,3 +17,7 @@ If you install the package using UPM, SampleScene.unity is read-only thus it can
 + Drag the blueprint texts in "BluePrintTexts" field.
 + Press Play.
 + The ***_output.txt should appear in StreamingAssets.
+
+Visit this site to learn Font Anatomy and have a look at my example of using Character Processor to reduce TextMesh Pro font atlas size.
+
+https://killertee.wordpress.com/2021/04/23/optimizing-workflow-textmesh-pro-font-atlas-for-language-localization/
