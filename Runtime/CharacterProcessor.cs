@@ -8,6 +8,8 @@ public class CharacterProcessor : MonoBehaviour
 {
     public TextAsset originText;
     public TextAsset[] bluePrintTexts;
+    [Tooltip("This option will generate uppercase-lowwercase for each result character.")]
+    public bool autoGenerateUpLowCase = true;//Enable this option will generate uppercase-lowwercase for each result character.
     private void Start()
     {
         string origin = RemoveDuplicateCharacter(originText.text);
@@ -15,6 +17,11 @@ public class CharacterProcessor : MonoBehaviour
         for (int i = 0; i < bluePrintTexts.Length; i++)
             blueprints[i] = RemoveDuplicateCharacter(bluePrintTexts[i].text);//remove all duplicate characters.
         string outputText = GetCharacterNotInBluePrint(origin, blueprints);//only keep character which is not included in blueprints 
+        if (autoGenerateUpLowCase)
+        {
+            outputText = outputText.ToUpper() + outputText.ToLower();
+            outputText = RemoveDuplicateCharacter(outputText);
+        }
         outputText = SortString(outputText);//sort the string
         string dataPath = Path.Combine(Application.streamingAssetsPath, originText.name + "_output.txt");//save output.txt to streaming asset folder
         if (!Directory.Exists(Application.streamingAssetsPath))
